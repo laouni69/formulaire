@@ -1,0 +1,39 @@
+<div class="container">
+
+  <nav id="nav">
+    <div id="logo-and-tabs">
+      <a id="logo-link" aria-label="Mint" href="https://www.mint.com"><img src="assets/intuit.png" id="mint" alt="mint"></a>
+      <div id="login">
+        <a id="signupButton" class="selected">Sign up</a>
+        <span>|</span>
+        <a id="signinButton">Log in</a>
+      </div>
+    </div>
+  </nav>
+  <section id="content">
+    <div id="left-column">
+      <img src="assets/barre.png" id="logo" alt="logo">
+      <h1><br>One Account</br>
+      <br>Everything Intuit</br></h1>
+      <h3>Create an account for all of Intuit's products including Mint.</h3>
+      <form>
+        <%= render partial: 'form' %>
+
+
+      </form>
+    </div>
+    
+    
+  </section>
+  <footer id="footer">
+    <nav>
+      <a>Support</a> | <a>Terms of Use </a> | <a>Privacy</a> | <a>Legal and Trademarck Notices</a> | <a>About Intuit</a>
+    </nav>
+    <nav>Mint bill pay services provided by Intuit Payments Inc. under applicable <a class="termsx">licenses</a>.
+    </nav>
+    <div id="sponsors">
+      <img src="assets/intuit.png" id="norton"/>
+    </div>
+  </footer>
+
+</div>

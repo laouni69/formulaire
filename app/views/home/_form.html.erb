@@ -1,0 +1,24 @@
+<%= form_for :user do |f| %>
+
+    <label>Your Email</label> <br/>
+    <%= f.email_field :email %><br/>
+
+    <label>Confirm Email</label> <br/>
+    <%= f.email_field :email %><br/>
+
+    <label>Phone (recommended)</label> <br/>
+    <%= f.phone_field :phone %><br/>
+
+    <label>Password</label> <br/>
+    <%= f.password_field :password_digest %><br/>
+
+    <label>Confirm Password</label> <br/>
+    <%= f.password_field :password_confirmation %><br/>
+
+    <input type="checkbox"> <label>Remember me</label><br/>
+
+    <%= f.submit :value => 'Sign Up' %>
+<% end %>
+
+<h5>By clicking Sign Up you agree to our <a class="terms">Terms of Use</a> and
+<a class="terms">Privacy Statement</a></h5>
